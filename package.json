@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "prettier": "^2.7.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

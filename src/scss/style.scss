@@ -10,50 +10,60 @@ body {
   font-style: normal;
 }
 
-.block-griting {
-  position: relative;
-  .header {
-    padding-top: 12px;
-    margin: 0 auto;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 100;
+
+  &__body {
     width: 1070px;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 12px;
+    margin: 0 auto;
+  }
 
-    &__menu {
-      display: flex;
-      gap: 60px;
-    }
-    &__text {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: #505f98;
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
-    }
-    &__logo {
-      z-index: 1;
-    }
-    &__button {
-      z-index: 1;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 18px;
-      background: #111b47;
-      border-radius: 2px;
-      padding: 4px 0;
-      width: 160px;
-      color: white;
-      &:hover {
-        cursor: pointer;
-        opacity: 0.8;
-      }
+  &__menu {
+    display: flex;
+    gap: 60px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #505f98;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
+  &__logo {
+    z-index: 1;
+  }
+  &__button {
+    z-index: 1;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    background: #111b47;
+    border-radius: 2px;
+    padding: 4px 0;
+    width: 160px;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+.block-griting {
+  position: relative;
   .info {
     display: flex;
     align-items: center;
@@ -117,7 +127,7 @@ body {
       z-index: 1;
     }
   }
-  .svg_background {
+  &__svg_background {
     z-index: 0;
     position: absolute;
     top: 0;
@@ -295,12 +305,12 @@ body {
     z-index: -1;
     position: absolute;
     overflow: hidden;
+    right: 0;
     top: 0;
     left: 0;
     bottom: 0;
-    max-width: 100%;
   }
-  .price-block {
+  .body {
     width: 600px;
     margin: 0 auto;
 
@@ -354,7 +364,6 @@ body {
       display: block;
       margin: 0 auto;
       margin-top: 9px;
-      width: 150px;
       font-weight: 500;
       font-size: 16px;
       line-height: 26px;
