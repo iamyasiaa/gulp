@@ -23,16 +23,6 @@ body {
       text-decoration: underline;
     }
   }
-  &__text--alt {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #929ecc;
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-  }
 }
 
 .button {
@@ -280,6 +270,9 @@ body {
     width: 1070px;
     margin: 0 auto;
   }
+  &__menu--text {
+    color: #929ecc;
+  }
   &__top {
     padding-bottom: 46px;
     padding-top: 61px;
@@ -292,8 +285,6 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #939ea4;
-  }
-  &__logo {
   }
   &__button {
     z-index: 1;
